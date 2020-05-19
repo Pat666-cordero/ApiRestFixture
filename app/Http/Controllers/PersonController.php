@@ -14,6 +14,11 @@ class PersonController extends Controller
      */
     public function index()
     {
+        $data = person::all();
+        return response()->json([
+            'status' => true,
+            'objects' => $data
+        ]);
         //
     }
 
