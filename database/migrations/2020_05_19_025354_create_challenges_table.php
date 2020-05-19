@@ -15,6 +15,9 @@ class CreateChallengesTable extends Migration
     {
         Schema::create('challenges', function (Blueprint $table) {
             $table->id();
+            $table->integer('score');
+            $table->integer('winner');
+            $table->integer('fase');
             $table->timestamps();
         });
     }
