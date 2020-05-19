@@ -14,7 +14,7 @@ class CreateEnrollmentsTable extends Migration
     public function up()
     {
         Schema::create('enrollments', function (Blueprint $table) {
-            $table->id();
+            $table->carneidentidad();
             $table->timestamps();
         });
     }
